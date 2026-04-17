@@ -3,11 +3,11 @@ const path = require('path');
 const fetch = require('node-fetch'); // Necesitas instalar node-fetch
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 // Configurar EJS como motor de vistas
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'view'));
 
 // Middleware para parsear JSON
 app.use(express.json());
