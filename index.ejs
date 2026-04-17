@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="TrackBox — escucha tracks de artistas independientes y busca música gratis">
+    <title>TrackBox</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>TrackBox</h1>
+        <nav aria-label="Navegación principal">
+            <a href="/">Inicio</a>
+            <a href="#">Artistas</a>
+        </nav>
+    </header>
+
+    <main>
+        <p class="subtitle">Artistas independientes — elige un track y dale play</p>
+
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Buscar canción o artista..." />
+            <button id="search-btn">Buscar</button>
+        </div>
+
+        <section id="search-results" class="track-list" aria-label="Resultados de búsqueda" style="display:none"></section>
+        <p id="search-status" class="search-status"></p>
+
+        <h2 class="section-title">Destacados</h2>
+        <section class="track-list" aria-label="Tracks disponibles">
+
+            <article class="track-card">
+                <img src="/assets/img/images.jpeg" alt="Portada: Appearing Nowhere — Zenith Bikini">
+                <div class="track-info">
+                    <p class="track-title">Appearing Nowhere</p>
+                    <p class="track-artist">Zenith Bikini ft. Rusty James Miller</p>
+                </div>
+                <audio controls aria-label="Reproducir Appearing Nowhere de Zenith Bikini">
+                    <source src="/assets/mp3/Appearing Nowhere (feat. Rusty James Miller) - Zenith Bikini.mp3"
+                        type="audio/mpeg">
+                </audio>
+            </article>
+
+            <article class="track-card">
+                <img src="/assets/img/pinkfloyd-original.jpg"
+                    alt="Portada: Back To The Start — Patrick Jordan Patrikios">
+                <div class="track-info">
+                    <p class="track-title">Back To The Start</p>
+                    <p class="track-artist">Patrick Jordan Patrikios</p>
+                </div>
+                <audio controls aria-label="Reproducir Back To The Start de Patrick Jordan Patrikios">
+                    <source src="/assets/mp3/Back To The Start - Patrick Jordan Patrikios.mp3" type="audio/mpeg">
+                </audio>
+            </article>
+
+            <article class="track-card">
+                <img src="/assets/img/plastic-hearts-tapa.webp" alt="Portada: Willow Gozilla — Zenith Bikini">
+                <div class="track-info">
+                    <p class="track-title">Willow Gozilla</p>
+                    <p class="track-artist">Zenith Bikini ft. Rusty James Miller</p>
+                </div>
+                <audio controls aria-label="Reproducir Willow Gozilla de Zenith Bikini">
+                    <source src="/assets/mp3/Willow Gozilla (feat. Rusty James Miller) - Zenith Bikini.mp3"
+                        type="audio/mpeg">
+                </audio>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TrackBox — previews de 30s via iTunes</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
